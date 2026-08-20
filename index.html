@@ -1,224 +1,131 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfólio profissional de Gabriel Schmitt — implantação ERP, suporte, infraestrutura e tecnologia." />
-  <title>Gabriel Schmitt — Portfólio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <meta name="theme-color" content="#F6F1E9" />
+  <meta name="robots" content="index, follow" />
+  <meta name="description" content="Portfólio profissional de Gabriel Schmitt. Experiência em implantação ERP, suporte N1–N3, infraestrutura de TI, Customer Success e desenvolvimento." />
+  <link rel="canonical" href="https://gabriel.syrum.com.br/" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:url" content="https://gabriel.syrum.com.br/" />
+  <meta property="og:title" content="Gabriel Schmitt | Implantação ERP, Suporte e Tecnologia" />
+  <meta property="og:description" content="Implantação ERP, suporte N1–N3, infraestrutura de TI, Customer Success e projetos em tecnologia." />
+  <meta property="og:image" content="https://gabriel.syrum.com.br/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Gabriel Schmitt | Implantação ERP, Suporte e Tecnologia" />
+  <meta name="twitter:description" content="Implantação ERP, suporte N1–N3, infraestrutura de TI, Customer Success e projetos em tecnologia." />
+  <meta name="twitter:image" content="https://gabriel.syrum.com.br/og-image.png" />
+  <title>Gabriel Schmitt | Implantação ERP, Suporte e Tecnologia</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="header">
-    <div class="container header-inner">
-      <a class="brand" href="#inicio">Gabriel Schmitt</a>
-      <nav class="nav" aria-label="Navegação principal">
-        <a href="#experiencia">Experiência</a>
-        <a href="#projetos">Projetos</a>
-        <a href="#servicos">Serviços</a>
-        <a href="#contatos">Contato</a>
-      </nav>
-      <button class="menu-btn" aria-label="Abrir menu" aria-expanded="false">
-        <span></span><span></span>
-      </button>
+  <a class="skip-link" href="#sobre">Pular para o conteúdo</a>
+
+  <nav class="site-nav" id="siteNav" aria-label="Navegação principal">
+    <div class="container nav-inner">
+      <a href="#topo" class="brand">Gabriel Schmitt</a>
+      <ul class="desktop-nav">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#competencias">Competências</a></li>
+        <li><a href="#experiencia">Experiência</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <button type="button" class="menu-button" id="menuButton" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span></button>
+    </div>
+    <div id="mobileMenu" class="mobile-nav">
+      <div class="container">
+        <a href="#sobre">Sobre</a><a href="#projetos">Projetos</a><a href="#competencias">Competências</a><a href="#experiencia">Experiência</a><a href="#contato">Contato</a>
+      </div>
+    </div>
+  </nav>
+
+  <header id="topo" class="hero section-pad">
+    <div class="container hero-inner">
+      <p class="eyebrow">Analista de Implantação &amp; Suporte · Biguaçu, SC</p>
+      <h1>Tecnologia na prática.</h1>
+      <p class="hero-copy">Atuo com implantação de sistemas ERP, infraestrutura de TI, suporte N1–N3 e Customer Success — conectando tecnologia e operação para resolver problemas reais.</p>
+      <a class="primary-link" href="#sobre">Conheça meu trabalho <span aria-hidden="true">↘</span></a>
+      <div class="hero-rule" aria-hidden="true"></div>
     </div>
   </header>
 
   <main>
-    <section class="hero" id="inicio">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="kicker">Implantação • Suporte • Infraestrutura</p>
-          <h1>Olá, eu sou<br><em>Gabriel Schmitt.</em></h1>
-          <p class="lead">
-            Analista de Implantação e Suporte ERP com atuação em infraestrutura de TI,
-            suporte técnico N1–N3, Customer Success e liderança operacional.
-          </p>
-          <p class="location">Biguaçu — SC</p>
-        </div>
-
-        <div class="photo-wrap">
-          <div class="photo-frame">
+    <section id="sobre" class="section-pad">
+      <div class="container about-grid">
+        <div class="portrait-column">
+          <div class="portrait-frame">
+            <span class="corner corner-tl"></span><span class="corner corner-tr"></span><span class="corner corner-bl"></span><span class="corner corner-br"></span>
+            <div class="portrait-shadow"></div>
             <img src="assets/gabriel-schmitt.png" alt="Gabriel Schmitt" />
           </div>
-          <span class="photo-note">Tecnologia aplicada à operação real.</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="contacts-strip" id="contatos">
-      <div class="container">
-        <p class="section-label">Contatos</p>
-        <div class="contact-grid">
-          <a href="https://wa.me/5547991198047" target="_blank" rel="noopener">
-            <span>WhatsApp</span><span class="arrow">↗</span>
-          </a>
-          <a href="mailto:contato.gabrielschmitt@gmail.com">
-            <span>E-mail</span><span class="arrow">↗</span>
-          </a>
-          <a href="https://linkedin.com/in/gabriel-schmitt-" target="_blank" rel="noopener">
-            <span>LinkedIn</span><span class="arrow">↗</span>
-          </a>
-          <a href="https://github.com/contatogabrielschmitt-coder" target="_blank" rel="noopener">
-            <span>GitHub</span><span class="arrow">↗</span>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section intro-section" id="experiencia">
-      <div class="container two-col">
-        <div>
-          <p class="section-label">Experiência</p>
-          <h2>Da preparação do ambiente à sustentação da operação.</h2>
-        </div>
-        <div class="body-copy">
-          <p>
-            Minha trajetória reúne implantação de ERP, infraestrutura, suporte técnico,
-            treinamento de usuários, atendimento consultivo e liderança de equipe.
-          </p>
-          <p>
-            Hoje atuo diretamente com ambientes produtivos, redes, hardware, parametrização,
-            troubleshooting e continuidade operacional.
-          </p>
-          <button class="text-button" id="toggleExperience" aria-expanded="false">
-            Ver minha experiência <span>↓</span>
-          </button>
-        </div>
-      </div>
-
-      <div class="container experience-panel" id="experiencePanel" hidden>
-        <article class="exp-row">
-          <div class="exp-date">2025 — atual</div>
-          <div>
-            <h3>Conrat Tecnologia</h3>
-            <p class="exp-role">Analista de Implantação e Suporte ERP | Gerente de Assistência Técnica</p>
-            <p>Gestão da assistência técnica, liderança operacional, implantação e sustentação do ERP DigiSat, infraestrutura, configuração fiscal, treinamento e suporte N1–N3.</p>
-          </div>
-        </article>
-
-        <article class="exp-row">
-          <div class="exp-date">2024</div>
-          <div>
-            <h3>MaxWork Automações</h3>
-            <p class="exp-role">Analista de Customer Success | Analista de Suporte</p>
-            <p>Acompanhamento de clientes da implantação ao pós-venda, Help Desk N1–N3, PDVs, ERP, Navicat e suporte a servidores Linux via PuTTY e WinSCP.</p>
-          </div>
-        </article>
-
-        <article class="exp-row">
-          <div class="exp-date">2023 — 2024</div>
-          <div>
-            <h3>Bluinfo Informática</h3>
-            <p class="exp-role">Técnico de Informática</p>
-            <p>Manutenção de desktops, notebooks e nobreaks, atendimento técnico, montagem de computadores corporativos e processos de RMA.</p>
-          </div>
-        </article>
-
-        <article class="exp-row">
-          <div class="exp-date">2021 — 2023</div>
-          <div>
-            <h3>Playmove</h3>
-            <p class="exp-role">Analista de Produção | Líder Operacional</p>
-            <p>Liderança de equipe com até 20 colaboradores, acompanhamento de indicadores, apoio à infraestrutura interna e melhoria de processos.</p>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="section projects" id="projetos">
-      <div class="container">
-        <div class="section-head">
-          <p class="section-label">Projetos selecionados</p>
-          <h2>Execuções que ajudam a explicar como eu trabalho.</h2>
-        </div>
-
-        <div class="project-list">
-          <article class="project-item">
-            <div class="project-index">Projeto</div>
-            <div class="project-main">
-              <h3>Infraestrutura tecnológica de parque aquático</h3>
-              <p>Implantação completa com cabeamento estruturado, switches, roteadores, múltiplos PDVs e parametrização do ambiente.</p>
-            </div>
-            <div class="project-meta">Redes · PDV · ERP</div>
-          </article>
-
-          <article class="project-item">
-            <div class="project-index">Experiência</div>
-            <div class="project-main">
-              <h3>Aproximadamente 20 implantações completas de ERP</h3>
-              <p>Projetos em empresas de diferentes segmentos, envolvendo preparação do ambiente, configuração, treinamento e estabilização.</p>
-            </div>
-            <div class="project-meta">Implantação · Suporte</div>
-          </article>
-
-          <article class="project-item muted-project">
-            <div class="project-index">Em evolução</div>
-            <div class="project-main">
-              <h3>Projetos pessoais e desenvolvimento</h3>
-              <p>Espaço reservado para produtos, sites, sistemas e estudos que farão parte do portfólio técnico.</p>
-            </div>
-            <div class="project-meta">Web · Sistemas</div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section services" id="servicos">
-      <div class="container">
-        <div class="section-head">
-          <p class="section-label">Serviços</p>
-          <h2>Áreas em que posso ajudar.</h2>
-        </div>
-
-        <div class="services-grid">
-          <article>
-            <h3>Suporte & Infraestrutura</h3>
-            <p>Diagnóstico, manutenção, Windows, redes, backups, periféricos e suporte a ambientes corporativos.</p>
-          </article>
-          <article>
-            <h3>Implantação de Sistemas</h3>
-            <p>Preparação do ambiente, parametrização, configuração, treinamento e acompanhamento pós-implantação.</p>
-          </article>
-          <article>
-            <h3>Desenvolvimento</h3>
-            <p>Landing pages, sites institucionais e soluções digitais simples, com foco em clareza e boa experiência.</p>
-          </article>
-          <article>
-            <h3>Consultoria Técnica</h3>
-            <p>Análise de ambiente, diagnóstico de problemas e orientação para melhorar estabilidade, organização e operação.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="final-cta">
-      <div class="container final-grid">
-        <div>
-          <p class="section-label">Contato</p>
-          <h2>Tem um projeto ou precisa de suporte técnico?</h2>
         </div>
         <div>
-          <p>Me chama e conversamos sobre o que você precisa.</p>
-          <div class="final-actions">
-            <a href="https://wa.me/5547991198047" target="_blank" rel="noopener">WhatsApp ↗</a>
+          <p class="eyebrow">Sobre mim</p>
+          <h2>Olá, eu sou <span>Gabriel</span>.</h2>
+          <p>Analista de Implantação e Suporte ERP com experiência em sistemas de gestão, infraestrutura de TI, Customer Success e liderança operacional. Atuo desde a preparação do ambiente e parametrização fiscal até treinamento de usuários e suporte pós-implantação.</p>
+          <p>Meu objetivo é entender onde um problema realmente começa — seja no sistema, na infraestrutura ou no processo — e trabalhar na causa até a operação funcionar com excelência.</p>
+          <div class="contact-row" aria-label="Contatos profissionais">
+            <a href="https://www.linkedin.com/in/gabriel-schmitt-" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+            <a href="https://wa.me/5547991198047" target="_blank" rel="noopener noreferrer">WhatsApp ↗</a>
             <a href="mailto:contato.gabrielschmitt@gmail.com">E-mail ↗</a>
+            <a href="https://github.com/contatogabrielschmitt-coder" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
           </div>
+          <p class="languages">Português — Nativo <span>·</span> Inglês — Intermediário <span>·</span> Espanhol — Básico</p>
         </div>
       </div>
+    </section>
+
+    <section id="projetos" class="section-pad projects-section">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow">Projetos selecionados</p><h2>Execuções que mostram como eu trabalho.</h2></div>
+        <div class="project-list">
+          <article class="project-row"><div class="project-type">Case profissional</div><div class="project-body"><h3>Infraestrutura tecnológica de parque aquático</h3><p>Implantação completa do ambiente, incluindo cabeamento estruturado, switches, roteadores, múltiplos PDVs e parametrização do sistema.</p></div><div class="project-meta">Infraestrutura · Redes · PDV · ERP</div></article>
+          <article class="project-row"><div class="project-type">Experiência</div><div class="project-body"><h3>Aproximadamente 20 implantações completas de ERP</h3><p>Projetos em empresas de diferentes segmentos, envolvendo preparação de ambiente, parametrização, treinamento, estabilização e suporte.</p></div><div class="project-meta">ERP · Implantação · Treinamento</div></article>
+          <a class="project-row project-row--link" href="https://syrum.com.br" target="_blank" rel="noopener noreferrer"><div class="project-type">Projeto pessoal</div><div class="project-body"><h3>Syrum</h3><p>CRM e plataforma de atendimento e automação empresarial em desenvolvimento, criada como projeto próprio para estudar produto, arquitetura e experiência operacional.</p></div><div class="project-meta">SaaS · CRM · Desenvolvimento ↗</div></a>
+          <a class="project-row project-row--link" href="https://www.conrat.com.br/" target="_blank" rel="noopener noreferrer"><div class="project-type">Projeto web</div><div class="project-body"><h3>Site institucional da Conrat Tecnologia</h3><p>Site institucional desenvolvido para apresentar a Conrat, sua trajetória e seu ecossistema de soluções em automação, ERP, infraestrutura, segurança e suporte técnico.</p></div><div class="project-meta">Site institucional · Web · UX ↗</div></a>
+          <a class="project-row project-row--link" href="https://github.com/contatogabrielschmitt-coder/gabriel-schmitt-portfolio" target="_blank" rel="noopener noreferrer"><div class="project-type">Projeto pessoal</div><div class="project-body"><h3>Portfólio profissional</h3><p>Projeto de presença digital com foco em identidade profissional, acessibilidade, responsividade e boa experiência em diferentes dispositivos.</p></div><div class="project-meta">Web · UI · GitHub Pages ↗</div></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="competencias" class="section-pad skills-section">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow">Competências</p><h2>Conhecimento aplicado à operação.</h2></div>
+        <div class="skills-grid">
+          <article class="skill-item"><h3>ERP &amp; Implantação</h3><p>ERP DigiSat · parametrização fiscal (NCM, CFOP e CEST) · treinamento de usuários · Customer Success · suporte consultivo</p></article>
+          <article class="skill-item"><h3>Infraestrutura de TI</h3><p>Windows · redes TCP/IP · VPN · compartilhamentos · servidores Windows · backup e recuperação · servidores Linux</p></article>
+          <article class="skill-item"><h3>Hardware &amp; Suporte</h3><p>Suporte N1, N2 e N3 · desktops · notebooks · nobreaks · PDVs · impressoras · balanças · equipamentos fiscais</p></article>
+          <article class="skill-item"><h3>Ferramentas &amp; Tecnologia</h3><p>SQL · Excel · Docker · Git · React · TypeScript · Vite · desenvolvimento web · Navicat · PuTTY · WinSCP · Microsoft 365 · Notion</p></article>
+          <article class="skill-item"><h3>Gestão &amp; Liderança</h3><p>Liderança de equipes · organização de processos · treinamentos · gestão de conflitos · atendimento ao cliente · resolução de problemas</p></article>
+          <article class="skill-item"><h3>Formação</h3><p>Análise e Desenvolvimento de Sistemas — Uniasselvi · formação técnica no SENAI Blumenau · cursos Alura e Udemy</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="experiencia" class="section-pad">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow">Trajetória</p><h2>Experiência profissional.</h2></div>
+        <div class="timeline">
+          <article class="experience-item experience-item--featured"><div class="experience-period">Jan/2025 — Presente</div><div><h3>Analista de Implantação e Suporte ERP</h3><p class="experience-extra">Gerente de Assistência Técnica</p><p class="experience-company">Conrat Tecnologia Ltda</p><ul><li>Gestão da assistência técnica e liderança operacional da equipe, com distribuição de atividades, treinamento e acompanhamento dos atendimentos.</li><li>Implantação, parametrização e sustentação do ERP DigiSat, incluindo infraestrutura, configuração fiscal, treinamento e estabilização do ambiente.</li><li>Suporte técnico N1, N2 e N3 em hardware, software, redes, periféricos fiscais e sistemas ERP.</li><li>Administração de ambientes Windows, redes locais, certificados digitais, PDVs, impressoras, balanças, backup e recuperação de dados.</li></ul></div></article>
+          <article class="experience-item"><div class="experience-period">Mai/2024 — Dez/2024</div><div><h3>Analista de Customer Success</h3><p class="experience-extra">Analista de Suporte</p><p class="experience-company">Maxwork Automações Ltda</p><ul><li>Acompanhamento de clientes da implantação ao pós-venda, com suporte funcional e foco em sucesso na utilização da plataforma.</li><li>Help Desk N1, N2 e N3 via telefone, WhatsApp e acesso remoto, além de implantação de PDVs e treinamento de usuários.</li><li>Consultas e manutenções em banco de dados com Navicat e suporte a servidores Linux via PuTTY e WinSCP.</li></ul></div></article>
+          <article class="experience-item"><div class="experience-period">Ago/2023 — Abr/2024</div><div><h3>Técnico de Informática</h3><p class="experience-company">Bluinfo Informática</p><ul><li>Manutenção corretiva e preventiva de desktops, notebooks e nobreaks, com atendimento técnico interno e externo.</li><li>Montagem de computadores corporativos em escala, suporte especializado em hardware e execução de processos de RMA.</li></ul></div></article>
+          <article class="experience-item"><div class="experience-period">Jun/2021 — Ago/2023</div><div><h3>Líder Operacional de Produção</h3><p class="experience-extra">Analista de Produção</p><p class="experience-company">Playmove Indústria e Comércio</p><ul><li>Liderança de equipe de até 20 colaboradores, distribuição de atividades e acompanhamento de indicadores de desempenho.</li><li>Participação na implementação de processos baseados na ISO 9001 e desenvolvimento de ferramenta para agilizar o diagnóstico de fontes de notebook.</li></ul></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad services-section" aria-labelledby="services-title">
+      <div class="container services-grid"><div><p class="eyebrow">Também trabalho com</p><h2 id="services-title">Tecnologia aplicada ao que precisa funcionar.</h2></div><div class="services-list"><p>Suporte &amp; infraestrutura</p><p>Implantação e parametrização de sistemas</p><p>Diagnóstico e manutenção técnica</p><p>Desenvolvimento de landing pages e sites institucionais</p><a href="#contato">Falar sobre um projeto ↘</a></div></div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container footer-inner">
-      <span>Gabriel Schmitt</span>
-      <span>Biguaçu — SC</span>
-      <span>© <span id="year"></span></span>
-    </div>
+  <footer id="contato" class="contact-footer section-pad">
+    <div class="container footer-inner"><p class="eyebrow eyebrow-light">Vamos conversar</p><h2>Tem uma oportunidade?</h2><p class="footer-copy">Estou aberto a novas posições, projetos e colaborações.</p><div class="footer-actions"><a class="footer-primary" href="mailto:contato.gabrielschmitt@gmail.com">contato.gabrielschmitt@gmail.com</a><a class="footer-secondary" href="https://wa.me/5547991198047" target="_blank" rel="noopener noreferrer">WhatsApp</a></div><div class="footer-links"><a href="https://www.linkedin.com/in/gabriel-schmitt-" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="https://github.com/contatogabrielschmitt-coder" target="_blank" rel="noopener noreferrer">GitHub</a><a href="#topo">Voltar ao topo ↑</a></div><p class="copyright">© 2026 Gabriel Schmitt · Biguaçu, SC</p></div>
   </footer>
-
   <script src="script.js"></script>
 </body>
 </html>

@@ -1,34 +1,35 @@
+const nav = document.querySelector('#siteNav');
+const menuButton = document.querySelector('#menuButton');
+const mobileMenu = document.querySelector('#mobileMenu');
 
-const menuButton = document.querySelector('.menu-btn');
-const nav = document.querySelector('.nav');
-const experienceButton = document.querySelector('#toggleExperience');
-const experiencePanel = document.querySelector('#experiencePanel');
-const year = document.querySelector('#year');
+const syncNav = () => {
+  nav?.classList.toggle('site-nav--solid', window.scrollY > 40 || mobileMenu?.classList.contains('mobile-nav--open'));
+};
 
-if (year) year.textContent = new Date().getFullYear();
-
+window.addEventListener('scroll', syncNav, { passive: true });
 menuButton?.addEventListener('click', () => {
-  const open = nav.classList.toggle('open');
-  menuButton.setAttribute('aria-expanded', String(open));
+  const isOpen = mobileMenu?.classList.toggle('mobile-nav--open') ?? false;
+  menuButton.setAttribute('aria-expanded', String(isOpen));
+  menuButton.setAttribute('aria-label', isOpen ? 'Fechar menu' : 'Abrir menu');
+  syncNav();
 });
 
-nav?.querySelectorAll('a').forEach(link => {
+document.querySelectorAll('#mobileMenu a').forEach((link) => {
   link.addEventListener('click', () => {
-    nav.classList.remove('open');
+    mobileMenu?.classList.remove('mobile-nav--open');
     menuButton?.setAttribute('aria-expanded', 'false');
+    menuButton?.setAttribute('aria-label', 'Abrir menu');
+    syncNav();
   });
 });
 
-experienceButton?.addEventListener('click', () => {
-  const isHidden = experiencePanel.hasAttribute('hidden');
-
-  if (isHidden) {
-    experiencePanel.removeAttribute('hidden');
-    experienceButton.innerHTML = 'Ocultar experiência <span>↑</span>';
-    experienceButton.setAttribute('aria-expanded', 'true');
-  } else {
-    experiencePanel.setAttribute('hidden', '');
-    experienceButton.innerHTML = 'Ver minha experiência <span>↓</span>';
-    experienceButton.setAttribute('aria-expanded', 'false');
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') {
+    mobileMenu?.classList.remove('mobile-nav--open');
+    menuButton?.setAttribute('aria-expanded', 'false');
+    menuButton?.setAttribute('aria-label', 'Abrir menu');
+    syncNav();
   }
 });
+
+syncNav();
