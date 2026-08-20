@@ -2,17 +2,22 @@
 
 
 :root {
-  --background: #f6f1e9;
-  --foreground: #28200f;
-  --card: #eee8dc;
-  --primary: #7a5c35;
-  --primary-foreground: #f6f1e9;
-  --secondary: #e5ddd0;
-  --muted: #ddd6c8;
-  --muted-foreground: #6e604d;
-  --accent: #ad7744;
-  --border: #cfc6b7;
-  --max: 1024px;
+  --background: #111111;
+  --foreground: #F2F2F2;
+
+  --primary: #E7E7E7;
+  --primary-foreground: #111111;
+
+  --secondary: #1C1C1C;
+  --secondary-foreground: #D7D7D7;
+
+  --muted: #242424;
+  --muted-foreground: #A8A8A8;
+
+  --accent: #9AA4AE;
+
+  --border: #333333;
+  --card: #171717;
 }
 
 * { box-sizing: border-box; }
