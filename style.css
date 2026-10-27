@@ -283,6 +283,6 @@ h1, h2, h3 { font-family: 'Space Grotesk', sans-serif; }
 .about h2 { font-family: 'Fraunces', serif; }
 
 /* v2.1 — hero actions */
-.hero-actions { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: center; }
 .secondary-link { display: inline-flex; align-items: center; gap: 8px; padding: 13px 22px; border-radius: 999px; border: 1px solid var(--border); font-size: .92rem; font-weight: 500; transition: border-color .2s ease, color .2s ease; }
 .secondary-link:hover { border-color: var(--primary); color: var(--primary); }
